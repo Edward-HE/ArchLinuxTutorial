@@ -60,17 +60,18 @@ $ adb root #在手机已经root的情况下打开root权限的adb shell
 
 ## 有关华为设备
 
-如果你没有在 18 年华为关闭 bl 锁码申请前拿到密码，那刷机在现在将变得基本不可能，尤其是近一年左右的新设备。  
+如果你没有在 18 年华为关闭 bl 锁码申请前拿到密码，那刷机在现在将变得基本不可能，尤其是近一年左右的新设备。
+
 老一些的设备可以尝试一下如下方法。
 
-下载 DC-unlocker 花四欧元，下载到电脑上检测设备，登陆，然后尝试解锁读取 bl 码。不是所有设备都能成功，我的 nova3e 虽然在其支持列表里，也没有成功。流程大致是[这个](https://www.forece.net/post/4886.htm)。查到的原因是安卓 8 之后某个安全补丁后，DC unlocker 已经不能读到 bl 码。看 DC 之后的更新能否解决这个问题吧。还有另一个办法是先降级，然后在用 DC 解锁。通过 Firmware Finder 降级的方式，但是我试了也不行，拿不到检测的更新了，据说是 **EMUI8.0.0.129** 后封死了其他渠道回滚。[资料 1](https://club.huawei.com/thread-15361104-1-1.html)[资料 2](https://cn.ui.vmall.com/thread-19813753-1-1.html)[资料 3](https://www.cnblogs.com/lsgxeva/p/13469490.html)
+下载 DC-unlocker 花四欧元，下载到电脑上检测设备，登陆，然后尝试解锁读取 bl 码。不是所有设备都能成功，我的机型虽然在其支持列表里，也没有成功。流程大致是[这个](https://www.forece.net/post/4886.htm)。查到的原因是安卓 8 之后某个安全补丁后，DC unlocker 已经不能读到 bl 码。看 DC 之后的更新能否解决这个问题吧。还有另一个办法是先降级，然后在用 DC 解锁。通过 Firmware Finder 降级的方式，但是我试了也不行，拿不到检测的更新了，据说是 **EMUI8.0.0.129** 后封死了其他渠道回滚。[资料 1](https://club.huawei.com/thread-15361104-1-1.html)[资料 2](https://cn.ui.vmall.com/thread-19813753-1-1.html)[资料 3](https://www.cnblogs.com/lsgxeva/p/13469490.html)
 
 淘宝卖码的反馈 nova3e 机型无法解锁拿到 BL。
 
 还有一个自行拿十六进制里 bl 码的[教程](https://www.52pojie.cn/thread-816065-1-1.html)，前提是必须先拿到 root,这在新机型上基本也不可能了。旧机型可以尝试。在 linux 上检查十六进制可用这个软件[Bless](https://www.archlinux.org/packages/community/any/bless/)
 
-所以 nova3e 这个机型基本不可能了，除非华为重新开放 bl 申请。之后试试更老一点的机型 nova2。
+所以华为的机器解锁基本是不可能的了，除非华为重新开放 bl 申请。
 
-## Ref
+---
 
-- [小米刷机教程](http://www.romleyuan.com/news/readnews?newsid=938)
+Ref: [小米刷机教程](http://www.romleyuan.com/news/readnews?newsid=938)
