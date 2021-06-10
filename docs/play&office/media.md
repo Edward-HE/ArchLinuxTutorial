@@ -18,16 +18,10 @@ listen1 是一款老牌的听歌软件，功能完善，同样资源全网整合
 yay -S listen1-desktop-appimage
 ```
 
-[Electron Netease Cloud Music](https://github.com/Rocket1184/electron-netease-cloud-music) 是一款用Electron和Vue编写的网易云音乐Linux客户端，支持歌曲下载，播放器最小化，自动签到等实用功能，使用体验非常好，强烈推荐
+[Electron Netease Cloud Music](https://github.com/Rocket1184/electron-netease-cloud-music) 是一款用 Electron 和 Vue 编写的网易云音乐 Linux 客户端，支持歌曲下载，这是它的优势，但是曲库没有前两款软件齐全。
 
 ```bash
 sudo pacman -S electron-netease-cloud-music
-```
-
-最后推荐一款附带隐藏下载功能的听歌软件 cocomusic,大家可自行探索。
-
-```bash
-yay -S cocomusic
 ```
 
 ## 视频播放器
@@ -39,4 +33,4 @@ sudo pacman -S vlc #VLC 播放器
 sudo pacman -S mpv #MPV 播放器
 ```
 
-[zy-player](https://aur.archlinux.org/packages/zy-player-bin/)是一个跨平台视频资源播放器, 整合全网资源，可以播放一些电影。
+除此之外，如果你想收看在线影视资源，[zy-player](https://aur.archlinux.org/packages/zy-player-bin/)是一个很好的选择，它是一个跨平台视频资源播放器, 整合全网资源，可以播放一些电影。
