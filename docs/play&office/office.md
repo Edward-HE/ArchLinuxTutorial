@@ -16,7 +16,7 @@
 sudo pacman -S telegram-desktop
 ```
 
-中国常见的通讯软件在 ArchLinux 下也可使用。qq 轻聊版，qq 正式版，微信等可按如下安装。使用前先确保[字体](https://wiki.archlinux.org/index.php/Localization/Chinese#Fonts)的安装，否则汉字均为方块。一般 qq 安装文泉驿字体([wqy-microhei](https://archlinux.org/packages/?name=wqy-microhei))即可解决方块问题。深度于 2020 下半年放出了 deepin-wine5，基于这个最新版的 deepinwine 的 AUR 包一般都比原有的稳定。
+中国常见的通讯软件在 ArchLinux 下也可使用。qq 轻聊版，qq 正式版，微信等可按如下安装。使用前先确保[字体](https://wiki.archlinux.org/index.php/Localization/Chinese#Fonts)的安装，否则汉字均为方块。一般 qq 安装文泉驿字体([wqy-microhei](https://archlinux.org/packages/?name=wqy-microhei))即可解决方块问题。深度于 2020 下半年放出了 deepin-wine5，基于这个最新版的 deepinwine 的 AUR 包一般都比原有的稳定。再次提醒，**我们不建议你使用 QQ 或微信这类专有间谍通讯软件作为你的主要通讯方式。**
 
 ```bash
 yay -S slack-desktop            #常见的团队合作交流软件
@@ -27,11 +27,11 @@ yay -S com.qq.weixin.deepin     #基于deepin wine5的wechat
 yay -S wechat-uos               #2020年末最新的uos版本原生微信的arch移植版本
 ```
 
-除此之外 对于另外一些手机通讯软件在电脑上的投屏可以尝试使用[scrcpy](https://aur.archlinux.org/packages/scrcpy/)。
+除此之外 对于另外一些手机通讯软件在电脑上的投屏可以尝试使用[scrcpy](https://aur.archlinux.org/packages/scrcpy/)<sup>AUR</sup>。
 
 ## 办公套件
 
-主要两个选择是 [WPS](<https://wiki.archlinux.org/index.php/WPS_Office_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>) 与 [LibreOffice](https://wiki.archlinux.org/index.php/LibreOffice)。我们建议你使用开源的 LibreOffice， 其目前的安装已经非常简单。
+主要两个选择是 [WPS](<https://wiki.archlinux.org/index.php/WPS_Office_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>)<sup>AUR</sup> 与 [LibreOffice](https://wiki.archlinux.org/index.php/LibreOffice)。我们建议你使用开源的 LibreOffice， 其目前的安装已经非常简单。
 
 ```bash
 sudo pacman -S libreoffice-still   #稳定版
@@ -73,6 +73,8 @@ sudo pacman -S flameshot
 
 ## 常用系统组件
 
+日常办公中所需要用到的各类小工具有很多实现，其中 KDE 的套件中就有很多，可以自行查询，此处仅列出几个常用的例子。
+
 - [Kcalc](https://archlinux.org/packages/extra/x86_64/kcalc/) 计算器
 - [Kamoso](https://archlinux.org/packages/extra/x86_64/kamoso/) 相机
 - [Cheese](https://archlinux.org/packages/extra/x86_64/kamoso/) 茄子相机
@@ -80,7 +82,11 @@ sudo pacman -S flameshot
 
 ## 远程协助
 
-你可以使用开源的[freerdp](https://archlinux.org/packages/community/x86_64/freerdp/)，或者使用[teamviewer](https://aur.archlinux.org/packages/teamviewer/)<sup>AUR</sup>一般即可满足绝大多数需求。需要注意安装后需按照提示启动服务。
+如需连接 windows 远程机器，你可以使用开源的[freerdp](https://archlinux.org/packages/community/x86_64/freerdp/)协议，配合开源实现[Xrdp](https://wiki.archlinux.org/title/Xrdp)，或者[Rdesktop](https://wiki.archlinux.org/title/Rdesktop)即可。
+
+如需链接 Linux 服务器，大多数场景使用 ssh 即可。
+
+如果以上解决方案不能满足你，那么可以尝试免费使用的专有软件[teamviewer](https://aur.archlinux.org/packages/teamviewer/)<sup>AUR</sup>，其完善的功能基本可以满足全部需求。需要注意安装后需按照提示启动服务。
 
 ```bash
 sudo systemctl enable --now teamviewerd
