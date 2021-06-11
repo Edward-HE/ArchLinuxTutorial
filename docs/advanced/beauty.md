@@ -88,7 +88,7 @@ GRUB_THEME="/usr/share/grub/themes/Nino/theme.txt" #修改后
 然后再在终端输入
 
 ```bash
-grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 更新 GRUB ，并重启即可。
