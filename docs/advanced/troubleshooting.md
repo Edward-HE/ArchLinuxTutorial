@@ -1,6 +1,6 @@
 # 常见问题排除与解决
 
-本节描述一些在日常使用过程中你很有可能遇到的问题，并提供解决方法。
+本节描述一些在日常使用过程中你有很大概率可能遇到的问题，并提供解决方法。
 
 ### 关机时卡住很久才能关机
 
@@ -48,9 +48,9 @@ yay -S downgrade
 
 安装此包即可，使用方法也很简单，downgrade 后加上需要降级的包名即可，随后会提示你选择需要降级到的版本，点选即可。
 
-### 升级系统时出现形如`error: failed to update core (unable to lock database)`的错误
+### 升级系统时出现形如 unable to lock database 的错误
 
-可能存在升级系统时异常关机或程序异常退出的情况，移除 pacman 的 db 锁即可
+可能存在升级系统时异常关机或程序异常退出的情况，或者多个 pacman 的相关程序在同时执行。移除 pacman 的 db 锁即可
 
 ```bash
 sudo rm /var/lib/pacman/db.lck
