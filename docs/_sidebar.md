@@ -14,7 +14,6 @@
   - [全局代理](/advanced/transparentProxy)
   - [常见问题排除与解决](/advanced/troubleshooting)
   - [功耗控制](/advanced/undervoltage)
-  - [其他可选配置](/advanced/others)
   - [系统美化](/advanced/beauty)
 
 - 娱乐与办公

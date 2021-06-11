@@ -87,6 +87,8 @@ sudo swapon /swapfile #启用swap文件
 /swapfile none swap defaults 0 0
 ```
 
+KDE 自身提供开箱即用的睡眠功能(suspend)，即将系统挂起到内存，消耗少量的电量。休眠(hibernate)会将系统挂起到交换分区或文件，几乎不消耗电量。sleep 睡眠功能已可满足绝大多数人的需求，如果你一定需要休眠功能，可以参考[官方文档](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate)设置休眠相关步骤。
+
 ## 6.开启 32 位支持库与 ArchLinuxCN 支持库
 
 ```bash
@@ -208,7 +210,11 @@ SDL_IM_MODULE=fcitx
 export EDITOR='vim'
 ```
 
-## 12.启动蓝牙(若有)
+## 12.异型字体设置
+
+个人的设置是英文使用 Hack，中文使用 Noto Sans CJK SC。可以在系统设置->外观->字体中进行设置。如遇到`门复关`等字形现实为日型字体，有关用户全局级别更改日文异型字的设置，可参考[官方文档](<https://wiki.archlinux.org/index.php/Localization_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)/Simplified_Chinese_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E4%BF%AE%E6%AD%A3%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%98%BE%E7%A4%BA%E4%B8%BA%E5%BC%82%E4%BD%93%EF%BC%88%E6%97%A5%E6%96%87%EF%BC%89%E5%AD%97%E5%BD%A2>)
+
+## 13.启动蓝牙(若有)
 
 如果你有蓝牙设备，需要启用蓝牙服务。随后在系统设置中进行添加设备与连接即可。
 
