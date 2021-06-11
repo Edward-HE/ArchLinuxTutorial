@@ -17,7 +17,7 @@ proxychains systemsettings5 #通过代理打开系统设置
 
 ## 系统主题
 
-使用一个高质量的系统主题可以直线提升系统的美观程度。_系统设置_ > _全局主题_ > _获取新的全局主题_ ，搜索主题 layan，进行设置即可。 顺便说一句，这个主题的作者 vinceliuice 是一位中国大佬，是一位设计师，他设计的主题以及图标的质量都很高，同学们可以去他的[主页](https://www.pling.com/u/vinceliuice/)为他打分和点赞。
+使用一个高质量的系统主题可以直线提升系统的美观程度。_系统设置_ > _外观_ > _全局主题_ > _获取新的全局主题_ ，搜索主题 layan，进行设置即可。 顺便说一句，这个主题的作者 vinceliuice 是一位中国大佬，是一位设计师，他设计的主题以及图标的质量都很高，同学们可以去他的[主页](https://www.pling.com/u/vinceliuice/)为他打分和点赞。
 
 > 如果切换主题后，windows 键不能呼出菜单，可在左下角右键，配置程序启动器，在键盘快捷键中重新设置`windows+F1`键，windows 键会显示为 Meta 键。
 
@@ -68,22 +68,29 @@ sudo pacman -S kvantum-qt5
 > 如果透明的效果没有显示，确保 KDE 的全局缩放比例为整数倍。或者尝试切换混成器中 openGL 的设置。
 
 ## GRUB 主题
-GRUB 的主题需要一定配置，所以可能会有些繁琐。
-可惜的是， Layan 没有 GRUB 主题，我们在这里使用 Distro 演示。
-在[这里](https://www.pling.com/p/1482847/)下载 Distro 的 GRUB 主题并解压。接下来 `cd` 进解压出来的文件夹，打开 konsole 输入
+
+[官方文档](https://wiki.archlinux.org/title/GRUB/Tips_and_tricks#Theme)
+
+在[pling](https://www.pling.com/browse/cat/109/order/latest/)选择下载你想要的 GRUB 主题，比如这个[二刺螈主题](https://www.pling.com/p/1526503/)。接下来 `cd` 进解压出来的文件夹，打开 konsole 输入
+
 ```bash
-sudo cp . /usr/share/grub/themes/Distro  -rf
+sudo cp -r . /usr/share/grub/themes/Nino
 ```
+
 以将主题放置在系统的 GRUB 默认文件夹内。
 接着编辑 `/etc/default/grub` 文件，找到 `#GRUB_THEME=` 一行，将前面的注释去掉，并指向主题的 `theme.txt` 文件。即
+
 ```bash
 #GRUB_THEME=
-GRUB_THEME="/usr/share/grub/themes/Distro/theme.txt" #修改后
+GRUB_THEME="/usr/share/grub/themes/Nino/theme.txt" #修改后
 ```
+
 然后再在终端输入
+
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
 更新 GRUB ，并重启即可。
 
 ---
